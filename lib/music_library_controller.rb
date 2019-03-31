@@ -67,15 +67,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.chomp
-    case user_input
-      when "list songs"	      
-        list_songs
-      when "list artists"
-        list_artists	
-      when "list genres"	      
-        genres
-      when 'play song'
-        play_song
+    
   end
 
 end
