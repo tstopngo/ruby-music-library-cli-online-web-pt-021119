@@ -72,7 +72,7 @@ class MusicLibraryController
     search_song = Songs.find_by_name(user_song_name)
     if search_song != nil
     puts "Playing #{songs_alphabetized[user_input-1].name} by #{songs_alphabetized[user_input-1].artist.name}"
-  end
+    end
   end
 
 end
