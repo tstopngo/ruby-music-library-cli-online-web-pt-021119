@@ -67,7 +67,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.chomp.to_i
-    puts "Playing #{} by #{}"
+    puts "Playing #{Song.all[user_input-1].name} by #{Song.all[user_input-1].artist.name}"
   end
 
 end
