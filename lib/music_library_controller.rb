@@ -20,17 +20,17 @@ class MusicLibraryController
     user_input = gets.chomp
     case user_input
     when "list songs"
-      self.list_songs
+      list_songs
     when "list artists"
-      self.list_artists
+      list_artists
     when "list genres"
-      self.list_genres
+      list_genres
     when "list artist"
-      self.list_songs_by_artist
+      list_songs_by_artist
     when "list genre"
-      self.list_songs_by_genre
+      list_songs_by_genre
     when "play song"
-      self.play_song
+      play_song
     when "exit"
       'exit'
     else
