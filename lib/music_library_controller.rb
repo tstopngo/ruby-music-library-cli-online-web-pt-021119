@@ -70,8 +70,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     user_input = gets.chomp.to_i
     songs_alphabetized = Song.all.sort_by{|song| song.name}
-    user_song_name = songs_alphabetized[user_input-1].name
-    if search_song != nil
+    if user_input <= songs_alphabetized.length
     puts "Playing #{songs_alphabetized[user_input-1].name} by #{songs_alphabetized[user_input-1].artist.name}"
     end
   end
