@@ -47,7 +47,7 @@ class MusicLibraryController
     
     if found_artist != nil
       found_artist.songs.each_with_index do |song, index|
-        puts "#{index+1}. #{song.name} - #{song.genre}"
+        puts "#{index+1}. #{song.name} - #{song.genre.name}"
       end
     end
   end
