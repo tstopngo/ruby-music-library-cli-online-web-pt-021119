@@ -50,7 +50,8 @@ class MusicLibraryController
         puts "#{index+1}. #{song.name} - #{song.genre}"
       end
     else
-    
+      puts "Sorry, artist not found"
+    end
   end
 
 end
